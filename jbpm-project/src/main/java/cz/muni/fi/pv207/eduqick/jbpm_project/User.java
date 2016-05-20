@@ -5,6 +5,8 @@ package cz.muni.fi.pv207.eduqick.jbpm_project;
  */
 
 @javax.persistence.Entity
+@org.kie.api.definition.type.Label("User")
+@org.kie.api.definition.type.Description("User Description")
 public class User implements java.io.Serializable
 {
 
@@ -15,19 +17,19 @@ public class User implements java.io.Serializable
    @javax.persistence.SequenceGenerator(sequenceName = "USER_ID_SEQ", name = "USER_ID_GENERATOR")
    private java.lang.Long id;
 
-   @org.kie.api.definition.type.Label(value = "Login")
+   @org.kie.api.definition.type.Label("Login")
    private java.lang.String login;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+   @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
 
-   @org.kie.api.definition.type.Label(value = "Surname")
+   @org.kie.api.definition.type.Label("Surname")
    private java.lang.String surname;
 
-   @org.kie.api.definition.type.Label(value = "e-mail")
+   @org.kie.api.definition.type.Label("e-mail")
    private java.lang.String email;
 
-   @org.kie.api.definition.type.Label(value = "Corporate Account ?")
+   @org.kie.api.definition.type.Label("Corporate Account ?")
    private java.lang.Boolean corporateAccount;
 
    public User()
@@ -94,9 +96,9 @@ public class User implements java.io.Serializable
       this.corporateAccount = corporateAccount;
    }
 
-   public User(java.lang.Long id, java.lang.String login,
-         java.lang.String name, java.lang.String surname,
-         java.lang.String email, java.lang.Boolean corporateAccount)
+   public User(java.lang.Long id, java.lang.String login, java.lang.String name,
+         java.lang.String surname, java.lang.String email,
+         java.lang.Boolean corporateAccount)
    {
       this.id = id;
       this.login = login;
