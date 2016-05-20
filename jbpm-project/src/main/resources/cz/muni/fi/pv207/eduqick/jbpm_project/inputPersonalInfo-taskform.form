@@ -1,0 +1,55 @@
+
+<form id="608027871">
+<property name="name" value="inputPersonalInfo-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="user_id" type="InputTextLong" id="328351329">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="user/id"/>
+<property name="outputBinding" value="user/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="1" name="user_email" type="InputText" id="218052826">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="user/email"/>
+<property name="outputBinding" value="user/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="user_name" type="InputText" id="1097948660">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="user/name"/>
+<property name="outputBinding" value="user/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="user_login" type="InputText" id="392558994">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;login (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="user/login"/>
+<property name="outputBinding" value="user/login"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="user_corporateAccount" type="CheckBox" id="2104783807">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;corporateAccount (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="user/corporateAccount"/>
+<property name="outputBinding" value="user/corporateAccount"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="5" name="user_surname" type="InputText" id="1428896470">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;surname (user)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="user/surname"/>
+<property name="outputBinding" value="user/surname"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="user" name="#9BCAFA" type="dataModelerEntry" outId="user" value="cz.muni.fi.pv207.eduqick.jbpm_project.User" id="user"/>
+</form>
