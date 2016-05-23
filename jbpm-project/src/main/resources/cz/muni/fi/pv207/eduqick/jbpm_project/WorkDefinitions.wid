@@ -13,18 +13,6 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "displayName" : "Email",
     "icon" : "defaultemailicon.gif"
   ],
-  
-    [
-    "name" : "Send Message",
-    "parameters" : [
-      "From" : new StringDataType(),
-      "To" : new StringDataType(),
-      "Subject" : new StringDataType(),
-      "Body" : new StringDataType()
-    ],
-    "displayName" : "Send Message",
-    "icon" : "defaultemailicon.gif"
-  ],
 
   [
     "name" : "Log",
