@@ -23,7 +23,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
       "Body" : new StringDataType()
     ],
     "displayName" : "Send Message",
-    "icon" : "defaultemailicon.gif"
+    "icon" : "sendTask.gif"
   ],
 
   [
