@@ -1,0 +1,14 @@
+
+<form id="531668086">
+<property name="name" value="writeRequest-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="requestMessage" type="InputText" id="1286730048">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;request (requestMessage)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="request" value="java.lang.String" id="requestMessage"/>
+</form>
