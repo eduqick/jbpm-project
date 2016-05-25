@@ -22,9 +22,10 @@
 <property name="readonly" value="true"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
+<property name="inputBinding" value="response"/>
 <property name="outputBinding" value="response"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="request" name="#E9E371" type="basicType" outId="" value="java.lang.String" id="requestMessage"/>
-<dataHolder inputId="" name="#FF54A7" type="basicType" outId="response" value="java.lang.String" id="responseMessage"/>
+<dataHolder inputId="response" name="#E9E371" type="basicType" outId="response" value="java.lang.String" id="responseMessage"/>
 </form>
