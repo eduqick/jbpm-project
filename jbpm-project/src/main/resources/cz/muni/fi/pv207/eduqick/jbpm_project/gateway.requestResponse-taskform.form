@@ -1,8 +1,0 @@
-
-<form id="835763812">
-<property name="name" value="gateway.requestResponse-taskform.form"/>
-<property name="displayMode" value="default"/>
-<property name="status" value="0"/>
-<dataHolder inputId="" name="#E9E371" type="basicType" outId="requestMessage" value="java.lang.String" id="requestMessage"/>
-<dataHolder inputId="" name="#FF54A7" type="basicType" outId="responseMessage" value="java.lang.String" id="responseMessage"/>
-</form>
