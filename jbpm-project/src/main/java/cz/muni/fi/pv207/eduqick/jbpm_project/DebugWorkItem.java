@@ -6,6 +6,10 @@ import org.kie.api.runtime.process.WorkItemManager;
 
 public class DebugWorkItem implements WorkItemHandler {
 
+    public DebugWorkItem() {
+
+    }
+
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
         System.out.println("---------------------------------debug-----------------------------------------");
         for (String key : workItem.getParameters().keySet()) {
