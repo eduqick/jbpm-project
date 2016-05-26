@@ -58,13 +58,30 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
         "ConnectTimeout" : new StringDataType(),
         "ReadTimeout" : new StringDataType(),
         "Username" : new StringDataType(),
-        "Password" : new StringDataType()
+        "Password" : new StringDataType(),
+        "HandleResponseErrors" :  new StringDataType(),
+        "ResultClass" : new StringDataType()
     ],
     "results" : [
         "Result" : new ObjectDataType(),
+        "Status" : new IntegerDataType()
     ],
     "displayName" : "REST",
     "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "Parse",
+    "parameters" : [
+      "Input" : new ObjectDataType(),
+      "Format" : new StringDataType(),
+      "Type" : new StringDataType()
+    ],
+    "results" : [
+       "Result" : new ObjectDataType()
+    ],
+    "displayName" : "Parse",
+    "icon" : "defaultservicenodeicon.gif"
   ]
 
 ]
