@@ -46,6 +46,12 @@
             <parameters/>
             <name>Send Task</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new cz.muni.fi.pv207.eduqick.jbpm_project.DebugWorkItem</identifier>
+            <parameters/>
+            <name>Debug</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
