@@ -14,11 +14,6 @@
 			<id>redhat-maven</id>
 			<url>https://maven.repository.redhat.com/ga/</url>
 		</repository>
-		<repository>
-			<id>guvnor-m2-repo</id>
-			<name>Guvnor M2 Repo</name>
-			<url>http://localhost:8080/business-central/maven2/</url>
-		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -36,4 +31,19 @@
 			</plugin>
 		</plugins>
 	</build>
+	<dependencies>
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.kie</groupId>
+			<artifactId>kie-api</artifactId>
+			<version>6.4.0.Final-redhat-3</version>
+<!-- 			<type>bundle</type> -->
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 </project>
