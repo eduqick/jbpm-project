@@ -22,6 +22,15 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "displayName" : "Log",
     "icon" : "defaultlogicon.gif"
   ],
+  
+  [
+    "name" : "Debug",
+    "parameters" : [
+      "Message" : new StringDataType()
+    ],
+    "displayName" : "Debug",
+    "icon" : "defaultlogicon.gif"
+  ],
 
   [
     "name" : "WebService",
