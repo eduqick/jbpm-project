@@ -7,7 +7,7 @@
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;company (companyName)quot;"/>
-<property name="readonly" value="false"/>
+<property name="readonly" value="true"/>
 <property name="inputBinding" value="company"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
@@ -24,15 +24,15 @@
 <field position="4" name="user_email" type="InputText" id="1997021306">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;email (user)quot;"/>
-<property name="readonly" value="false"/>
+<property name="label" value="User E-mail"/>
+<property name="readonly" value="true"/>
 <property name="inputBinding" value="user/email"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="0" name="user_id" type="InputTextLong" id="1791532651">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;id (user)quot;"/>
-<property name="readonly" value="false"/>
+<property name="label" value="User ID"/>
+<property name="readonly" value="true"/>
 <property name="inputBinding" value="user/id"/>
 <property name="fieldClass" value="java.lang.Long"/>
 </field>
@@ -40,14 +40,14 @@
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;login (user)quot;"/>
-<property name="readonly" value="false"/>
+<property name="readonly" value="true"/>
 <property name="inputBinding" value="user/login"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="2" name="user_name" type="InputText" id="852429654">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;name (user)quot;"/>
-<property name="readonly" value="false"/>
+<property name="readonly" value="true"/>
 <property name="inputBinding" value="user/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
@@ -55,7 +55,7 @@
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;surname (user)quot;"/>
-<property name="readonly" value="false"/>
+<property name="readonly" value="true"/>
 <property name="inputBinding" value="user/surname"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
