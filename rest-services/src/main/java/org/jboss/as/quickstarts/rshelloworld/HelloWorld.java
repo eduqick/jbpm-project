@@ -28,11 +28,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * A simple REST service which is able to say hello to someone using HelloService Please take a look at the web.xml where JAX-RS
- * is enabled
- * 
- * @author gbrey@redhat.com
- * 
+ *
  */
 
 @Path("/")
@@ -41,29 +37,23 @@ public class HelloWorld {
     @GET
     @Path("/approver")
     @Produces({MediaType.APPLICATION_JSON})
-    public Response getApproverId(@QueryParam("email") String email) {
+    public Response getApproverId(@QueryParam("company") String company) {
 
-        if (email == null  || email.isEmpty()) {
-            return Response.status(Status.BAD_REQUEST).entity("email parametr is required").build();
+        if (company == null || company.isEmpty()) {
+            return Response.status(Status.BAD_REQUEST).entity("company parameter is required").build();
         }
 
-        if (!email.contains("@")) {
-            return Response.status(Status.BAD_REQUEST).entity("email is in invalid format").build();
-        }
-
-        String domain = email.split("@", 2)[1].toLowerCase();
+        String domain = company.replace(" ", "").toLowerCase();
 
         String approver = null;
         if (domain.contains("redhat")) {
             approver = "jane";
-        } else if (domain.contains("embedit")) {
-            approver = "jitka";
         } else {
-            return Response.status(Status.NOT_FOUND).entity("email " + email + " not found").build();
+            return Response.status(Status.NOT_FOUND).entity("company " + company + " not found").build();
         }
 
         Map<String, String> response = new HashMap<String, String>();
-        response.put("email", email);
+        response.put("email", approver + "@redhat.com");
         response.put("manager", approver);
         return Response.ok(response).build();
     }
