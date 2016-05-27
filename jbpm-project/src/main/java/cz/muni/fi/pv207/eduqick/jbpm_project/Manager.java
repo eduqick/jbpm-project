@@ -44,4 +44,11 @@ public class Manager implements java.io.Serializable
       this.email = email;
    }
 
+@Override
+public String toString() {
+    return "Manager [manager=" + manager + ", email=" + email + "]";
+}
+   
+   
+
 }
