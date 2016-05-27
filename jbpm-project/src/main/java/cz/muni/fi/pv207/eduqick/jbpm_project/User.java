@@ -108,4 +108,12 @@ public class User implements java.io.Serializable
       this.corporateAccount = corporateAccount;
    }
 
+@Override
+public String toString() {
+    return "User [id=" + id + ", login=" + login + ", name=" + name + ", surname=" + surname + ", email=" + email
+            + ", corporateAccount=" + corporateAccount + "]";
+}
+   
+   
+
 }
