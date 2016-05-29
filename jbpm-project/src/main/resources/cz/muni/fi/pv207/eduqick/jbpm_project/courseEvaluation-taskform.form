@@ -1,0 +1,14 @@
+
+<form id="45261055">
+<property name="name" value="courseEvaluation-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="evalResult" type="InputText" id="575645573">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;evalResult (evalResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="evalResult"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="evalResult" value="java.lang.String" id="evalResult"/>
+</form>
