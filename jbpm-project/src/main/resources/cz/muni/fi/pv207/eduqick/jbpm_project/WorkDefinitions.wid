@@ -83,6 +83,19 @@ import org.drools.core.process.core.datatype.impl.type.IntegerDataType;
     ],
     "displayName" : "Parse",
     "icon" : "defaultservicenodeicon.gif"
-  ]
+  ],
+  
+  [
+    "name" : "Append",
+    "parameters" : [
+      "Entry" : new ObjectDataType(),
+      "List" : new ObjectDataType()
+    ],
+    "results" : [
+       "List" : new ObjectDataType()
+    ],
+    "displayName" : "Append",
+    "icon" : "defaultservicenodeicon.gif"
+  ],
 
 ]

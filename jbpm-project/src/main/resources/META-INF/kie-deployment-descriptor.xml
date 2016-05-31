@@ -52,6 +52,12 @@
             <parameters/>
             <name>Debug</name>
         </work-item-handler>
+                <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new cz.muni.fi.pv207.eduqick.jbpm_project.AppendWorkItem()</identifier>
+            <parameters/>
+            <name>Append</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
