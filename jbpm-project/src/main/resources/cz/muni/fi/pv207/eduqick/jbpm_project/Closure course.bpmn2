@@ -583,7 +583,7 @@ kcontext.setVariable(&quot;tmp&quot;, sb.toString());</bpmn2:script>
         <bpmn2:incoming>SequenceFlow_2</bpmn2:incoming>
         <bpmn2:outgoing>SequenceFlow_4</bpmn2:outgoing>
         <bpmn2:ioSpecification id="_zQj2MCcSEeabUY4i7li0Eg">
-          <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_FromInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_FromInputXItem" name="From"/>
+          <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_FromInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_FromInputXItem" name="Message"/>
           <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_ToInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_ToInputXItem" name="To"/>
           <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_SubjectInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_SubjectInputXItem" name="Subject"/>
           <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_BodyInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_BodyInputXItem" name="Body"/>
@@ -604,15 +604,15 @@ kcontext.setVariable(&quot;tmp&quot;, sb.toString());</bpmn2:script>
         </bpmn2:dataInputAssociation>
         <bpmn2:dataInputAssociation id="_zQj2NycSEeabUY4i7li0Eg">
           <bpmn2:targetRef>_F3884BC5-6246-427C-9573-7514D3033AF7_ToInputX</bpmn2:targetRef>
-          <bpmn2:assignment id="_zQj2OCcSEeabUY4i7li0Eg">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_zQj2OScSEeabUY4i7li0Eg"><![CDATA[participant@gmail.com]]></bpmn2:from>
-            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_zQj2OicSEeabUY4i7li0Eg">_F3884BC5-6246-427C-9573-7514D3033AF7_ToInputX</bpmn2:to>
+          <bpmn2:assignment id="Assignment_4">
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_12">#{user}</bpmn2:from>
+            <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_10">_F3884BC5-6246-427C-9573-7514D3033AF7_ToInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
         <bpmn2:dataInputAssociation id="_zQj2OycSEeabUY4i7li0Eg">
           <bpmn2:targetRef>_F3884BC5-6246-427C-9573-7514D3033AF7_SubjectInputX</bpmn2:targetRef>
           <bpmn2:assignment id="_zQj2PCcSEeabUY4i7li0Eg">
-            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_zQj2PScSEeabUY4i7li0Eg"><![CDATA[Any thoughts after course?]]></bpmn2:from>
+            <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_zQj2PScSEeabUY4i7li0Eg">Any thoughts after course #{courseName}?</bpmn2:from>
             <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_zQj2PicSEeabUY4i7li0Eg">_F3884BC5-6246-427C-9573-7514D3033AF7_SubjectInputX</bpmn2:to>
           </bpmn2:assignment>
         </bpmn2:dataInputAssociation>
