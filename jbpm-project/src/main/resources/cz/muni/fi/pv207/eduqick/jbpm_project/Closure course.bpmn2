@@ -680,7 +680,7 @@ kcontext.setVariable(&quot;feedback&quot;, feedback);</bpmn2:script>
       <bpmn2:script>userList = [&quot;johny@gmail.com&quot;, &quot;jane@rh.com&quot;, &quot;dee@go.go&quot;];
 feedbackList = [];
 
-System.out.println(&quot;participants: &quot; + list);
+System.out.println(&quot;participants: &quot; + userList);
 kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="SequenceFlow_5" drools:priority="1" sourceRef="_B381D008-67B2-4E7E-AE41-5726B28C54D7" targetRef="ScriptTask_1"/>
