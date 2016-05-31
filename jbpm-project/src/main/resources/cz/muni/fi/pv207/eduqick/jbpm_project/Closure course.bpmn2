@@ -66,14 +66,12 @@
           </drools:metaData>
         </bpmn2:extensionElements>
         <bpmn2:flowNodeRef>_A9CFF7BC-F6B7-413E-B285-AAED04B3CE08</bpmn2:flowNodeRef>
-        <bpmn2:flowNodeRef>SubProcess_1</bpmn2:flowNodeRef>
-        <bpmn2:flowNodeRef>BoundaryEvent_1</bpmn2:flowNodeRef>
-        <bpmn2:flowNodeRef>_809C9098-908A-4C0C-BB0A-FA3287D91A21</bpmn2:flowNodeRef>
         <bpmn2:flowNodeRef>_3285812A-BBE9-47E4-AC76-40CB8D3F4B8F</bpmn2:flowNodeRef>
         <bpmn2:flowNodeRef>ScriptTask_1</bpmn2:flowNodeRef>
         <bpmn2:flowNodeRef>_B381D008-67B2-4E7E-AE41-5726B28C54D7</bpmn2:flowNodeRef>
         <bpmn2:flowNodeRef>_4A31762E-1DBD-420F-855C-BBE2C6307DB7</bpmn2:flowNodeRef>
         <bpmn2:flowNodeRef>_1CFCBA28-A647-4480-AE5D-117BE2E9352A</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>SubProcess_1</bpmn2:flowNodeRef>
         <bpmn2:flowNodeRef>_D37EA23D-C101-40A1-8185-163F55EDF6C7</bpmn2:flowNodeRef>
       </bpmn2:lane>
       <bpmn2:lane id="_EA5C0702-0525-4EC8-A485-1F36938913E5" drools:selectable="true" color:background-color="#ffffff" color:border-color="#000000" color:color="#000000" name="Course supervisor">
@@ -123,7 +121,6 @@
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_F6A5FC01-C2FB-4555-81AB-5F6DF636651A" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_D3FB5089-35D7-4AD2-8697-250F7893D42E" targetRef="_C7890980-C29C-4864-8BD1-4377F3A5EC32"/>
     <bpmn2:sequenceFlow id="_1ED3EF7C-DC66-4D00-BBDB-CA626EABA6D5" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_E2440D15-3332-4868-BA92-ED107D2ED096" targetRef="_B6B3CFCB-3520-480B-8504-FAA010A494D6"/>
-    <bpmn2:sequenceFlow id="_01B587A3-84E7-4389-9B1B-9C84D68C93B3" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_809C9098-908A-4C0C-BB0A-FA3287D91A21" targetRef="_3285812A-BBE9-47E4-AC76-40CB8D3F4B8F"/>
     <bpmn2:sequenceFlow id="_0CC151AE-4AB5-4152-89B6-74AA3D540A20" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_3285812A-BBE9-47E4-AC76-40CB8D3F4B8F" targetRef="_D37EA23D-C101-40A1-8185-163F55EDF6C7"/>
     <bpmn2:sequenceFlow id="_927E1694-3C4E-4186-BD86-9027FB160002" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_D37EA23D-C101-40A1-8185-163F55EDF6C7" targetRef="_A3FB129F-F8A9-4ADA-A677-3AC4242CA1D3"/>
     <bpmn2:startEvent id="_4A31762E-1DBD-420F-855C-BBE2C6307DB7" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
@@ -199,11 +196,6 @@
       <bpmn2:outgoing>_E09D6519-5F7E-4E7F-848E-4347B14A6CC4</bpmn2:outgoing>
       <bpmn2:outgoing>SequenceFlow_5</bpmn2:outgoing>
     </bpmn2:parallelGateway>
-    <bpmn2:exclusiveGateway id="_809C9098-908A-4C0C-BB0A-FA3287D91A21" drools:selectable="true" drools:dg="_01B587A3-84E7-4389-9B1B-9C84D68C93B3" color:background-color="#f0e68c" color:border-color="#a67f00" color:color="#000000" name="" gatewayDirection="Converging" default="_01B587A3-84E7-4389-9B1B-9C84D68C93B3">
-      <bpmn2:incoming>SequenceFlow_9</bpmn2:incoming>
-      <bpmn2:incoming>SequenceFlow_10</bpmn2:incoming>
-      <bpmn2:outgoing>_01B587A3-84E7-4389-9B1B-9C84D68C93B3</bpmn2:outgoing>
-    </bpmn2:exclusiveGateway>
     <bpmn2:userTask id="_A9CFF7BC-F6B7-413E-B285-AAED04B3CE08" drools:selectable="true" drools:scriptFormat="http://www.java.com/java" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Write course report">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
@@ -254,7 +246,7 @@
     </bpmn2:userTask>
     <bpmn2:parallelGateway id="_3285812A-BBE9-47E4-AC76-40CB8D3F4B8F" drools:selectable="true" color:background-color="#f0e68c" color:border-color="#a67f00" color:color="#000000" name="" gatewayDirection="Converging">
       <bpmn2:incoming>_9EDD85DC-9758-4486-B3CD-835962C70B8E</bpmn2:incoming>
-      <bpmn2:incoming>_01B587A3-84E7-4389-9B1B-9C84D68C93B3</bpmn2:incoming>
+      <bpmn2:incoming>SequenceFlow_18</bpmn2:incoming>
       <bpmn2:outgoing>_0CC151AE-4AB5-4152-89B6-74AA3D540A20</bpmn2:outgoing>
     </bpmn2:parallelGateway>
     <bpmn2:scriptTask id="_D37EA23D-C101-40A1-8185-163F55EDF6C7" drools:selectable="true" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="generate report" scriptFormat="http://www.mvel.org/2.0">
@@ -540,7 +532,7 @@ kcontext.setVariable(&quot;tmp&quot;, sb.toString());</bpmn2:script>
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>SequenceFlow_6</bpmn2:incoming>
-      <bpmn2:outgoing>SequenceFlow_9</bpmn2:outgoing>
+      <bpmn2:outgoing>SequenceFlow_18</bpmn2:outgoing>
       <bpmn2:ioSpecification id="InputOutputSpecification_2">
         <bpmn2:dataInput id="DataInput_3" itemSubjectRef="ItemDefinition_103" isCollection="true" name="userList"/>
         <bpmn2:dataOutput id="DataOutput_2" itemSubjectRef="_feedbackListItem" isCollection="true" name="feedbackList"/>
@@ -581,7 +573,7 @@ kcontext.setVariable(&quot;tmp&quot;, sb.toString());</bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
         <bpmn2:incoming>SequenceFlow_2</bpmn2:incoming>
-        <bpmn2:outgoing>SequenceFlow_4</bpmn2:outgoing>
+        <bpmn2:outgoing>SequenceFlow_14</bpmn2:outgoing>
         <bpmn2:ioSpecification id="_zQj2MCcSEeabUY4i7li0Eg">
           <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_FromInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_FromInputXItem" name="Message"/>
           <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_ToInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_ToInputXItem" name="To"/>
@@ -625,14 +617,37 @@ kcontext.setVariable(&quot;tmp&quot;, sb.toString());</bpmn2:script>
         </bpmn2:dataInputAssociation>
       </bpmn2:sendTask>
       <bpmn2:sequenceFlow id="SequenceFlow_2" drools:priority="1" sourceRef="StartEvent_1" targetRef="_F3884BC5-6246-427C-9573-7514D3033AF7"/>
+      <bpmn2:scriptTask id="ScriptTask_2" name="log result" scriptFormat="http://www.mvel.org/2.0">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[log result]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>SequenceFlow_15</bpmn2:incoming>
+        <bpmn2:outgoing>SequenceFlow_11</bpmn2:outgoing>
+        <bpmn2:script>System.out.println(&quot;recieved response from &quot; + user);
+
+feedback = &quot;user: &quot; + user + &quot;\n&quot; + response;
+System.out.println(feedback);
+kcontext.setVariable(&quot;feedback&quot;, feedback);</bpmn2:script>
+      </bpmn2:scriptTask>
+      <bpmn2:endEvent id="EndEvent_1" name="feedback recieved">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[feedback recieved]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>SequenceFlow_11</bpmn2:incoming>
+      </bpmn2:endEvent>
+      <bpmn2:sequenceFlow id="SequenceFlow_11" drools:priority="1" sourceRef="ScriptTask_2" targetRef="EndEvent_1"/>
       <bpmn2:intermediateCatchEvent id="_C0F98350-0E03-4BB6-836A-6435B9E0FA14" drools:selectable="true" drools:boundaryca="true" color:background-color="#f5deb3" color:border-color="#a0522d" color:color="#000000" name="Feedback recieved">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
             <drools:metaValue><![CDATA[Feedback recieved]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:incoming>SequenceFlow_4</bpmn2:incoming>
-        <bpmn2:outgoing>SequenceFlow_7</bpmn2:outgoing>
+        <bpmn2:incoming>SequenceFlow_12</bpmn2:incoming>
+        <bpmn2:outgoing>SequenceFlow_15</bpmn2:outgoing>
         <bpmn2:dataOutput id="_C0F98350-0E03-4BB6-836A-6435B9E0FA14_data" drools:dtype="String" name="data"/>
         <bpmn2:dataOutputAssociation id="_zQj2VicSEeabUY4i7li0Eg">
           <bpmn2:sourceRef>_C0F98350-0E03-4BB6-836A-6435B9E0FA14_data</bpmn2:sourceRef>
@@ -643,31 +658,47 @@ kcontext.setVariable(&quot;tmp&quot;, sb.toString());</bpmn2:script>
         </bpmn2:outputSet>
         <bpmn2:signalEventDefinition id="_zQj2VycSEeabUY4i7li0Eg" signalRef="_feedback"/>
       </bpmn2:intermediateCatchEvent>
-      <bpmn2:sequenceFlow id="SequenceFlow_4" drools:priority="1" sourceRef="_F3884BC5-6246-427C-9573-7514D3033AF7" targetRef="_C0F98350-0E03-4BB6-836A-6435B9E0FA14"/>
-      <bpmn2:scriptTask id="ScriptTask_2" name="log result" scriptFormat="http://www.mvel.org/2.0">
+      <bpmn2:intermediateCatchEvent id="IntermediateCatchEvent_3" name="1 week">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
-            <drools:metaValue><![CDATA[log result]]></drools:metaValue>
+            <drools:metaValue><![CDATA[1 week]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:incoming>SequenceFlow_7</bpmn2:incoming>
-        <bpmn2:outgoing>SequenceFlow_11</bpmn2:outgoing>
-        <bpmn2:script>System.out.println(&quot;recieved response from &quot; + user);
-
-feedback = &quot;user: &quot; + user + &quot;\n&quot; + response;
-System.out.println(feedback);
-kcontext.setVariable(&quot;feedback&quot;, feedback);</bpmn2:script>
+        <bpmn2:incoming>SequenceFlow_13</bpmn2:incoming>
+        <bpmn2:outgoing>SequenceFlow_16</bpmn2:outgoing>
+        <bpmn2:timerEventDefinition id="TimerEventDefinition_4">
+          <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression" id="FormalExpression_18">2m</bpmn2:timeDuration>
+        </bpmn2:timerEventDefinition>
+      </bpmn2:intermediateCatchEvent>
+      <bpmn2:eventBasedGateway id="EventBasedGateway_1" gatewayDirection="Diverging">
+        <bpmn2:incoming>SequenceFlow_14</bpmn2:incoming>
+        <bpmn2:outgoing>SequenceFlow_12</bpmn2:outgoing>
+        <bpmn2:outgoing>SequenceFlow_13</bpmn2:outgoing>
+      </bpmn2:eventBasedGateway>
+      <bpmn2:sequenceFlow id="SequenceFlow_12" drools:priority="1" sourceRef="EventBasedGateway_1" targetRef="_C0F98350-0E03-4BB6-836A-6435B9E0FA14"/>
+      <bpmn2:sequenceFlow id="SequenceFlow_13" drools:priority="1" sourceRef="EventBasedGateway_1" targetRef="IntermediateCatchEvent_3"/>
+      <bpmn2:sequenceFlow id="SequenceFlow_14" drools:priority="1" sourceRef="_F3884BC5-6246-427C-9573-7514D3033AF7" targetRef="EventBasedGateway_1"/>
+      <bpmn2:sequenceFlow id="SequenceFlow_15" drools:priority="1" sourceRef="_C0F98350-0E03-4BB6-836A-6435B9E0FA14" targetRef="ScriptTask_2"/>
+      <bpmn2:scriptTask id="ScriptTask_3" name="log timeout" scriptFormat="http://www.mvel.org/2.0">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[log timeout]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>SequenceFlow_16</bpmn2:incoming>
+        <bpmn2:outgoing>SequenceFlow_17</bpmn2:outgoing>
+        <bpmn2:script>System.out.println(&quot;request for user &quot; + user + &quot; timed out&quot;);</bpmn2:script>
       </bpmn2:scriptTask>
-      <bpmn2:sequenceFlow id="SequenceFlow_7" drools:priority="1" sourceRef="_C0F98350-0E03-4BB6-836A-6435B9E0FA14" targetRef="ScriptTask_2"/>
-      <bpmn2:endEvent id="EndEvent_1" name="feedback recieved">
+      <bpmn2:sequenceFlow id="SequenceFlow_16" drools:priority="1" sourceRef="IntermediateCatchEvent_3" targetRef="ScriptTask_3"/>
+      <bpmn2:endEvent id="EndEvent_2" name="timed out">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
-            <drools:metaValue><![CDATA[feedback recieved]]></drools:metaValue>
+            <drools:metaValue><![CDATA[timed out]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:incoming>SequenceFlow_11</bpmn2:incoming>
+        <bpmn2:incoming>SequenceFlow_17</bpmn2:incoming>
       </bpmn2:endEvent>
-      <bpmn2:sequenceFlow id="SequenceFlow_11" drools:priority="1" sourceRef="ScriptTask_2" targetRef="EndEvent_1"/>
+      <bpmn2:sequenceFlow id="SequenceFlow_17" drools:priority="1" sourceRef="ScriptTask_3" targetRef="EndEvent_2"/>
     </bpmn2:subProcess>
     <bpmn2:scriptTask id="ScriptTask_1" name="Fetch participan list" scriptFormat="http://www.mvel.org/2.0">
       <bpmn2:extensionElements>
@@ -685,19 +716,7 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="SequenceFlow_5" drools:priority="1" sourceRef="_B381D008-67B2-4E7E-AE41-5726B28C54D7" targetRef="ScriptTask_1"/>
     <bpmn2:sequenceFlow id="SequenceFlow_6" drools:priority="1" sourceRef="ScriptTask_1" targetRef="SubProcess_1"/>
-    <bpmn2:sequenceFlow id="SequenceFlow_9" drools:priority="1" sourceRef="SubProcess_1" targetRef="_809C9098-908A-4C0C-BB0A-FA3287D91A21"/>
-    <bpmn2:boundaryEvent id="BoundaryEvent_1" name="1 week" attachedToRef="SubProcess_1">
-      <bpmn2:extensionElements>
-        <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[1 week]]></drools:metaValue>
-        </drools:metaData>
-      </bpmn2:extensionElements>
-      <bpmn2:outgoing>SequenceFlow_10</bpmn2:outgoing>
-      <bpmn2:timerEventDefinition id="TimerEventDefinition_2">
-        <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression" id="FormalExpression_9">5m</bpmn2:timeDuration>
-      </bpmn2:timerEventDefinition>
-    </bpmn2:boundaryEvent>
-    <bpmn2:sequenceFlow id="SequenceFlow_10" drools:priority="1" sourceRef="BoundaryEvent_1" targetRef="_809C9098-908A-4C0C-BB0A-FA3287D91A21"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_18" drools:priority="1" sourceRef="SubProcess_1" targetRef="_3285812A-BBE9-47E4-AC76-40CB8D3F4B8F"/>
     <bpmn2:textAnnotation id="_1C44E457-54DA-4767-BA99-6D4B1F05F321" drools:selectable="true" color:background-color="" color:border-color="#000000" color:color="#000000">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
@@ -732,9 +751,9 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_SubProcess_1" bpmnElement="SubProcess_1" isExpanded="true">
-        <dc:Bounds height="181.0" width="561.0" x="510.0" y="348.0"/>
+        <dc:Bounds height="222.0" width="641.0" x="510.0" y="345.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="14.0" width="160.0" x="516.0" y="351.0"/>
+          <dc:Bounds height="14.0" width="160.0" x="516.0" y="348.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdVycSEeabUY4i7li0Eg" bpmnElement="_4A31762E-1DBD-420F-855C-BBE2C6307DB7">
@@ -748,15 +767,15 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdWScSEeabUY4i7li0Eg" bpmnElement="_1C44E457-54DA-4767-BA99-6D4B1F05F321">
-        <dc:Bounds height="50.0" width="100.0" x="710.0" y="371.0"/>
+        <dc:Bounds height="50.0" width="100.0" x="703.0" y="377.0"/>
         <bpmndi:BPMNLabel>
-          <dc:Bounds height="44.0" width="88.0" x="716.0" y="371.0"/>
+          <dc:Bounds height="44.0" width="88.0" x="709.0" y="377.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdWicSEeabUY4i7li0Eg" bpmnElement="_89096805-8A83-4244-BF63-BAE86993271F">
-        <dc:Bounds height="56.0" width="124.0" x="850.0" y="368.0"/>
+        <dc:Bounds height="56.0" width="124.0" x="886.0" y="365.0"/>
         <bpmndi:BPMNLabel>
-          <dc:Bounds height="50.0" width="112.0" x="856.0" y="368.0"/>
+          <dc:Bounds height="50.0" width="112.0" x="892.0" y="365.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdWycSEeabUY4i7li0Eg" bpmnElement="_B381D008-67B2-4E7E-AE41-5726B28C54D7" isMarkerVisible="true">
@@ -764,14 +783,10 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdXCcSEeabUY4i7li0Eg" bpmnElement="_F3884BC5-6246-427C-9573-7514D3033AF7">
-        <dc:Bounds height="80.0" width="100.0" x="638.0" y="428.0"/>
+        <dc:Bounds height="80.0" width="100.0" x="631.0" y="434.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="42.0" width="72.0" x="652.0" y="447.0"/>
+          <dc:Bounds height="42.0" width="72.0" x="645.0" y="453.0"/>
         </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="_zQkdXScSEeabUY4i7li0Eg" bpmnElement="_809C9098-908A-4C0C-BB0A-FA3287D91A21" isMarkerVisible="true">
-        <dc:Bounds height="40.0" width="40.0" x="1120.0" y="534.0"/>
-        <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdXicSEeabUY4i7li0Eg" bpmnElement="_A9CFF7BC-F6B7-413E-B285-AAED04B3CE08">
         <dc:Bounds height="80.0" width="100.0" x="365.0" y="556.0"/>
@@ -784,15 +799,15 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdYicSEeabUY4i7li0Eg" bpmnElement="_C0F98350-0E03-4BB6-836A-6435B9E0FA14">
-        <dc:Bounds height="30.0" width="30.0" x="779.0" y="453.0"/>
+        <dc:Bounds height="30.0" width="30.0" x="826.0" y="423.0"/>
         <bpmndi:BPMNLabel>
-          <dc:Bounds height="28.0" width="57.0" x="766.0" y="483.0"/>
+          <dc:Bounds height="28.0" width="57.0" x="813.0" y="453.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdZScSEeabUY4i7li0Eg" bpmnElement="_D37EA23D-C101-40A1-8185-163F55EDF6C7">
-        <dc:Bounds height="80.0" width="100.0" x="1280.0" y="556.0"/>
+        <dc:Bounds height="80.0" width="100.0" x="1240.0" y="556.0"/>
         <bpmndi:BPMNLabel>
-          <dc:Bounds height="14.0" width="84.0" x="1288.0" y="589.0"/>
+          <dc:Bounds height="14.0" width="84.0" x="1248.0" y="589.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdZicSEeabUY4i7li0Eg" bpmnElement="_A3FB129F-F8A9-4ADA-A677-3AC4242CA1D3">
@@ -844,9 +859,9 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_StartEvent_1" bpmnElement="StartEvent_1">
-        <dc:Bounds height="36.0" width="36.0" x="547.0" y="450.0"/>
+        <dc:Bounds height="36.0" width="36.0" x="540.0" y="456.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="28.0" width="54.0" x="538.0" y="486.0"/>
+          <dc:Bounds height="28.0" width="54.0" x="531.0" y="492.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_ScriptTask_1" bpmnElement="ScriptTask_1">
@@ -856,21 +871,37 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_ScriptTask_2" bpmnElement="ScriptTask_2">
-        <dc:Bounds height="62.0" width="104.0" x="870.0" y="437.0"/>
+        <dc:Bounds height="62.0" width="104.0" x="943.0" y="407.0"/>
         <bpmndi:BPMNLabel>
-          <dc:Bounds height="14.0" width="51.0" x="896.0" y="461.0"/>
+          <dc:Bounds height="14.0" width="51.0" x="969.0" y="431.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_EndEvent_1" bpmnElement="EndEvent_1">
-        <dc:Bounds height="36.0" width="36.0" x="1011.0" y="450.0"/>
+        <dc:Bounds height="36.0" width="36.0" x="1084.0" y="420.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="28.0" width="57.0" x="1001.0" y="486.0"/>
+          <dc:Bounds height="28.0" width="57.0" x="1074.0" y="456.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="BPMNShape_BoundaryEvent_1" bpmnElement="BoundaryEvent_1">
-        <dc:Bounds height="36.0" width="36.0" x="922.0" y="511.0"/>
+      <bpmndi:BPMNShape id="BPMNShape_IntermediateCatchEvent_3" bpmnElement="IntermediateCatchEvent_3">
+        <dc:Bounds height="36.0" width="36.0" x="818.0" y="496.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="14.0" width="39.0" x="817.0" y="532.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_EventBasedGateway_1" bpmnElement="EventBasedGateway_1" isMarkerVisible="true">
+        <dc:Bounds height="50.0" width="50.0" x="751.0" y="449.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_ScriptTask_3" bpmnElement="ScriptTask_3">
+        <dc:Bounds height="50.0" width="110.0" x="940.0" y="489.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="14.0" width="61.0" x="964.0" y="507.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_EndEvent_2" bpmnElement="EndEvent_2">
+        <dc:Bounds height="36.0" width="36.0" x="1085.0" y="495.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="14.0" width="39.0" x="921.0" y="547.0"/>
+          <dc:Bounds height="14.0" width="51.0" x="1078.0" y="531.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="_zQkdQicSEeabUY4i7li0Eg" bpmnElement="_42B7CA84-7661-41D7-821F-0403AD6ED006" sourceElement="_zQkdVycSEeabUY4i7li0Eg" targetElement="_zQkdWCcSEeabUY4i7li0Eg">
@@ -895,7 +926,7 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdRScSEeabUY4i7li0Eg" bpmnElement="_9EDD85DC-9758-4486-B3CD-835962C70B8E" sourceElement="_zQkdXicSEeabUY4i7li0Eg" targetElement="_zQkdXycSEeabUY4i7li0Eg">
         <di:waypoint xsi:type="dc:Point" x="465.0" y="596.0"/>
-        <di:waypoint xsi:type="dc:Point" x="989.0" y="596.0"/>
+        <di:waypoint xsi:type="dc:Point" x="995.0" y="596.0"/>
         <di:waypoint xsi:type="dc:Point" x="1180.0" y="596.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
@@ -941,35 +972,28 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="1110.0" y="939.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="_zQkdTycSEeabUY4i7li0Eg" bpmnElement="_01B587A3-84E7-4389-9B1B-9C84D68C93B3" sourceElement="_zQkdXScSEeabUY4i7li0Eg" targetElement="_zQkdXycSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="1160.0" y="554.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1200.0" y="554.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1200.0" y="576.0"/>
-        <bpmndi:BPMNLabel/>
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdVScSEeabUY4i7li0Eg" bpmnElement="_0CC151AE-4AB5-4152-89B6-74AA3D540A20" sourceElement="_zQkdXycSEeabUY4i7li0Eg" targetElement="_zQkdZScSEeabUY4i7li0Eg">
         <di:waypoint xsi:type="dc:Point" x="1220.0" y="596.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1270.0" y="596.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1280.0" y="596.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1230.0" y="596.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1240.0" y="596.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdVicSEeabUY4i7li0Eg" bpmnElement="_927E1694-3C4E-4186-BD86-9027FB160002" sourceElement="_zQkdZScSEeabUY4i7li0Eg" targetElement="_zQkdZicSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="1330.0" y="636.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1330.0" y="687.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1290.0" y="636.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1290.0" y="687.0"/>
         <di:waypoint xsi:type="dc:Point" x="440.0" y="687.0"/>
         <di:waypoint xsi:type="dc:Point" x="440.0" y="794.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdbicSEeabUY4i7li0Eg" bpmnElement="_09537865-962C-467D-B7F1-4DAD5511EB1E" sourceElement="_zQkdYicSEeabUY4i7li0Eg" targetElement="_zQkdWicSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="794.0" y="453.0"/>
-        <di:waypoint xsi:type="dc:Point" x="794.0" y="434.0"/>
-        <di:waypoint xsi:type="dc:Point" x="912.0" y="434.0"/>
-        <di:waypoint xsi:type="dc:Point" x="912.0" y="424.0"/>
+        <di:waypoint xsi:type="dc:Point" x="841.0" y="423.0"/>
+        <di:waypoint xsi:type="dc:Point" x="841.0" y="393.0"/>
+        <di:waypoint xsi:type="dc:Point" x="886.0" y="393.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdbycSEeabUY4i7li0Eg" bpmnElement="_E4EB972C-226C-4A7D-AB23-6AC0923CAB98" sourceElement="_zQkdXCcSEeabUY4i7li0Eg" targetElement="_zQkdWScSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="688.0" y="428.0"/>
-        <di:waypoint xsi:type="dc:Point" x="688.0" y="396.0"/>
-        <di:waypoint xsi:type="dc:Point" x="710.0" y="396.0"/>
+        <di:waypoint xsi:type="dc:Point" x="681.0" y="434.0"/>
+        <di:waypoint xsi:type="dc:Point" x="681.0" y="402.0"/>
+        <di:waypoint xsi:type="dc:Point" x="703.0" y="402.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="_zQkdZycSEeabUY4i7li0Eg" targetElement="_zQkdaicSEeabUY4i7li0Eg">
         <di:waypoint xsi:type="dc:Point" x="850.0" y="834.0"/>
@@ -978,15 +1002,9 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_2" sourceElement="BPMNShape_StartEvent_1" targetElement="_zQkdXCcSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="583.0" y="468.0"/>
-        <di:waypoint xsi:type="dc:Point" x="610.0" y="468.0"/>
-        <di:waypoint xsi:type="dc:Point" x="638.0" y="468.0"/>
-        <bpmndi:BPMNLabel/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_4" bpmnElement="SequenceFlow_4" sourceElement="_zQkdXCcSEeabUY4i7li0Eg" targetElement="_zQkdYicSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="738.0" y="468.0"/>
-        <di:waypoint xsi:type="dc:Point" x="758.0" y="468.0"/>
-        <di:waypoint xsi:type="dc:Point" x="779.0" y="468.0"/>
+        <di:waypoint xsi:type="dc:Point" x="576.0" y="474.0"/>
+        <di:waypoint xsi:type="dc:Point" x="603.0" y="474.0"/>
+        <di:waypoint xsi:type="dc:Point" x="631.0" y="474.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_5" bpmnElement="SequenceFlow_5" sourceElement="_zQkdWycSEeabUY4i7li0Eg" targetElement="BPMNShape_ScriptTask_1">
@@ -997,32 +1015,57 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_6" bpmnElement="SequenceFlow_6" sourceElement="BPMNShape_ScriptTask_1" targetElement="BPMNShape_SubProcess_1">
         <di:waypoint xsi:type="dc:Point" x="461.0" y="438.0"/>
-        <di:waypoint xsi:type="dc:Point" x="485.0" y="438.0"/>
-        <di:waypoint xsi:type="dc:Point" x="510.0" y="438.0"/>
-        <bpmndi:BPMNLabel/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_7" bpmnElement="SequenceFlow_7" sourceElement="_zQkdYicSEeabUY4i7li0Eg" targetElement="BPMNShape_ScriptTask_2">
-        <di:waypoint xsi:type="dc:Point" x="809.0" y="468.0"/>
-        <di:waypoint xsi:type="dc:Point" x="839.0" y="468.0"/>
-        <di:waypoint xsi:type="dc:Point" x="870.0" y="468.0"/>
-        <bpmndi:BPMNLabel/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_9" bpmnElement="SequenceFlow_9" sourceElement="BPMNShape_SubProcess_1" targetElement="_zQkdXScSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="1071.0" y="438.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1140.0" y="438.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1140.0" y="534.0"/>
-        <bpmndi:BPMNLabel/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_10" bpmnElement="SequenceFlow_10" sourceElement="BPMNShape_BoundaryEvent_1" targetElement="_zQkdXScSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="940.0" y="547.0"/>
-        <di:waypoint xsi:type="dc:Point" x="940.0" y="554.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1120.0" y="554.0"/>
+        <di:waypoint xsi:type="dc:Point" x="490.0" y="438.0"/>
+        <di:waypoint xsi:type="dc:Point" x="490.0" y="456.0"/>
+        <di:waypoint xsi:type="dc:Point" x="510.0" y="456.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_11" bpmnElement="SequenceFlow_11" sourceElement="BPMNShape_ScriptTask_2" targetElement="BPMNShape_EndEvent_1">
-        <di:waypoint xsi:type="dc:Point" x="974.0" y="468.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1000.0" y="468.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1011.0" y="468.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1047.0" y="438.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1073.0" y="438.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1084.0" y="438.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_12" bpmnElement="SequenceFlow_12" sourceElement="BPMNShape_EventBasedGateway_1" targetElement="_zQkdYicSEeabUY4i7li0Eg">
+        <di:waypoint xsi:type="dc:Point" x="776.0" y="449.0"/>
+        <di:waypoint xsi:type="dc:Point" x="776.0" y="438.0"/>
+        <di:waypoint xsi:type="dc:Point" x="826.0" y="438.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_13" bpmnElement="SequenceFlow_13" sourceElement="BPMNShape_EventBasedGateway_1" targetElement="BPMNShape_IntermediateCatchEvent_3">
+        <di:waypoint xsi:type="dc:Point" x="776.0" y="499.0"/>
+        <di:waypoint xsi:type="dc:Point" x="776.0" y="514.0"/>
+        <di:waypoint xsi:type="dc:Point" x="818.0" y="514.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_14" bpmnElement="SequenceFlow_14" sourceElement="_zQkdXCcSEeabUY4i7li0Eg" targetElement="BPMNShape_EventBasedGateway_1">
+        <di:waypoint xsi:type="dc:Point" x="731.0" y="474.0"/>
+        <di:waypoint xsi:type="dc:Point" x="741.0" y="474.0"/>
+        <di:waypoint xsi:type="dc:Point" x="751.0" y="474.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_15" bpmnElement="SequenceFlow_15" sourceElement="_zQkdYicSEeabUY4i7li0Eg" targetElement="BPMNShape_ScriptTask_2">
+        <di:waypoint xsi:type="dc:Point" x="856.0" y="438.0"/>
+        <di:waypoint xsi:type="dc:Point" x="899.0" y="438.0"/>
+        <di:waypoint xsi:type="dc:Point" x="943.0" y="438.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_16" bpmnElement="SequenceFlow_16" sourceElement="BPMNShape_IntermediateCatchEvent_3" targetElement="BPMNShape_ScriptTask_3">
+        <di:waypoint xsi:type="dc:Point" x="854.0" y="514.0"/>
+        <di:waypoint xsi:type="dc:Point" x="897.0" y="514.0"/>
+        <di:waypoint xsi:type="dc:Point" x="940.0" y="514.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_17" bpmnElement="SequenceFlow_17" sourceElement="BPMNShape_ScriptTask_3" targetElement="BPMNShape_EndEvent_2">
+        <di:waypoint xsi:type="dc:Point" x="1050.0" y="514.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1067.0" y="513.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1085.0" y="513.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_18" bpmnElement="SequenceFlow_18" sourceElement="BPMNShape_SubProcess_1" targetElement="_zQkdXycSEeabUY4i7li0Eg">
+        <di:waypoint xsi:type="dc:Point" x="1151.0" y="456.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1200.0" y="456.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1200.0" y="576.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
