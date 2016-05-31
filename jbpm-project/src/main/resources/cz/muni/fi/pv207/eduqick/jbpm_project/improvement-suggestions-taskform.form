@@ -1,0 +1,22 @@
+
+<form id="855568334">
+<property name="name" value="improvement-suggestions-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="tmp" type="InputText" id="208425208">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;report (tmp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="report"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="evalResult" type="InputText" id="1541961925">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;toImprove (evalResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="toImprove"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="toImprove" value="java.lang.String" id="evalResult"/>
+<dataHolder inputId="report" name="#A7E690" type="basicType" outId="" value="java.lang.String" id="tmp"/>
+</form>
