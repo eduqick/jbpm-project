@@ -80,14 +80,14 @@
             <drools:metaValue><![CDATA[Course supervisor]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
-        <bpmn2:flowNodeRef>_E2440D15-3332-4868-BA92-ED107D2ED096</bpmn2:flowNodeRef>
-        <bpmn2:flowNodeRef>_B6B3CFCB-3520-480B-8504-FAA010A494D6</bpmn2:flowNodeRef>
         <bpmn2:flowNodeRef>_C7890980-C29C-4864-8BD1-4377F3A5EC32</bpmn2:flowNodeRef>
-        <bpmn2:flowNodeRef>_A3FB129F-F8A9-4ADA-A677-3AC4242CA1D3</bpmn2:flowNodeRef>
-        <bpmn2:flowNodeRef>_AC5FC479-FD29-42D4-831A-B87306080588</bpmn2:flowNodeRef>
-        <bpmn2:flowNodeRef>_D3FB5089-35D7-4AD2-8697-250F7893D42E</bpmn2:flowNodeRef>
-        <bpmn2:flowNodeRef>_6AE0BFC1-9C68-4FF0-9AA2-EDF462A5447F</bpmn2:flowNodeRef>
         <bpmn2:flowNodeRef>_85FA2FB8-7265-4CCC-89AB-87FB4B39B241</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_E2440D15-3332-4868-BA92-ED107D2ED096</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_6AE0BFC1-9C68-4FF0-9AA2-EDF462A5447F</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_AC5FC479-FD29-42D4-831A-B87306080588</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_B6B3CFCB-3520-480B-8504-FAA010A494D6</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_D3FB5089-35D7-4AD2-8697-250F7893D42E</bpmn2:flowNodeRef>
+        <bpmn2:flowNodeRef>_A3FB129F-F8A9-4ADA-A677-3AC4242CA1D3</bpmn2:flowNodeRef>
       </bpmn2:lane>
     </bpmn2:laneSet>
     <bpmn2:sequenceFlow id="_42B7CA84-7661-41D7-821F-0403AD6ED006" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_4A31762E-1DBD-420F-855C-BBE2C6307DB7" targetRef="_1CFCBA28-A647-4480-AE5D-117BE2E9352A"/>
@@ -575,7 +575,7 @@ kcontext.setVariable(&quot;tmp&quot;, sb.toString());</bpmn2:script>
         <bpmn2:incoming>SequenceFlow_2</bpmn2:incoming>
         <bpmn2:outgoing>SequenceFlow_14</bpmn2:outgoing>
         <bpmn2:ioSpecification id="_zQj2MCcSEeabUY4i7li0Eg">
-          <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_FromInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_FromInputXItem" name="From"/>
+          <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_FromInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_FromInputXItem" name="Message"/>
           <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_ToInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_ToInputXItem" name="To"/>
           <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_SubjectInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_SubjectInputXItem" name="Subject"/>
           <bpmn2:dataInput id="_F3884BC5-6246-427C-9573-7514D3033AF7_BodyInputX" drools:dtype="String" itemSubjectRef="__F3884BC5-6246-427C-9573-7514D3033AF7_BodyInputXItem" name="Body"/>
@@ -811,51 +811,51 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdZicSEeabUY4i7li0Eg" bpmnElement="_A3FB129F-F8A9-4ADA-A677-3AC4242CA1D3">
-        <dc:Bounds height="80.0" width="100.0" x="390.0" y="794.0"/>
+        <dc:Bounds height="80.0" width="100.0" x="460.0" y="794.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="14.0" width="100.0" x="390.0" y="827.0"/>
+          <dc:Bounds height="14.0" width="100.0" x="460.0" y="827.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdZycSEeabUY4i7li0Eg" bpmnElement="_85FA2FB8-7265-4CCC-89AB-87FB4B39B241">
-        <dc:Bounds height="80.0" width="100.0" x="750.0" y="794.0"/>
+        <dc:Bounds height="80.0" width="100.0" x="820.0" y="794.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="28.0" width="75.0" x="762.0" y="820.0"/>
+          <dc:Bounds height="28.0" width="75.0" x="832.0" y="820.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdaCcSEeabUY4i7li0Eg" bpmnElement="_AC5FC479-FD29-42D4-831A-B87306080588" isMarkerVisible="true">
-        <dc:Bounds height="40.0" width="40.0" x="580.0" y="814.0"/>
+        <dc:Bounds height="40.0" width="40.0" x="650.0" y="814.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="28.0" width="60.0" x="570.0" y="854.0"/>
+          <dc:Bounds height="28.0" width="60.0" x="640.0" y="854.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdaScSEeabUY4i7li0Eg" bpmnElement="_6AE0BFC1-9C68-4FF0-9AA2-EDF462A5447F">
-        <dc:Bounds height="28.0" width="28.0" x="1110.0" y="730.0"/>
+        <dc:Bounds height="28.0" width="28.0" x="1180.0" y="730.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="14.0" width="76.0" x="1086.0" y="758.0"/>
+          <dc:Bounds height="14.0" width="76.0" x="1156.0" y="758.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdaicSEeabUY4i7li0Eg" bpmnElement="_D3FB5089-35D7-4AD2-8697-250F7893D42E">
-        <dc:Bounds height="80.0" width="100.0" x="930.0" y="794.0"/>
+        <dc:Bounds height="80.0" width="100.0" x="1000.0" y="794.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="28.0" width="99.0" x="930.0" y="820.0"/>
+          <dc:Bounds height="28.0" width="99.0" x="1000.0" y="820.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdaycSEeabUY4i7li0Eg" bpmnElement="_C7890980-C29C-4864-8BD1-4377F3A5EC32">
-        <dc:Bounds height="28.0" width="28.0" x="1110.0" y="820.0"/>
+        <dc:Bounds height="28.0" width="28.0" x="1180.0" y="820.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="28.0" width="51.0" x="1099.0" y="848.0"/>
+          <dc:Bounds height="28.0" width="51.0" x="1169.0" y="848.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdbCcSEeabUY4i7li0Eg" bpmnElement="_B6B3CFCB-3520-480B-8504-FAA010A494D6">
-        <dc:Bounds height="28.0" width="28.0" x="1110.0" y="925.0"/>
+        <dc:Bounds height="28.0" width="28.0" x="1180.0" y="925.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="28.0" width="53.0" x="1098.0" y="953.0"/>
+          <dc:Bounds height="28.0" width="53.0" x="1168.0" y="953.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_zQkdbScSEeabUY4i7li0Eg" bpmnElement="_E2440D15-3332-4868-BA92-ED107D2ED096">
-        <dc:Bounds height="80.0" width="100.0" x="930.0" y="899.0"/>
+        <dc:Bounds height="80.0" width="100.0" x="1000.0" y="899.0"/>
         <bpmndi:BPMNLabel labelStyle="#//@definitions/@diagrams.0/@labelStyle.0">
-          <dc:Bounds height="28.0" width="100.0" x="930.0" y="925.0"/>
+          <dc:Bounds height="28.0" width="100.0" x="1000.0" y="925.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_StartEvent_1" bpmnElement="StartEvent_1">
@@ -931,45 +931,45 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdRicSEeabUY4i7li0Eg" bpmnElement="_2EF556A9-A44B-4BC6-9E63-8AF22F5A2049" sourceElement="_zQkdZicSEeabUY4i7li0Eg" targetElement="_zQkdaCcSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="490.0" y="834.0"/>
-        <di:waypoint xsi:type="dc:Point" x="542.0" y="834.0"/>
-        <di:waypoint xsi:type="dc:Point" x="580.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="560.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="612.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="650.0" y="834.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdRycSEeabUY4i7li0Eg" bpmnElement="_E7FEA345-FDE4-47CE-AD60-A64D0291A853" sourceElement="_zQkdaCcSEeabUY4i7li0Eg" targetElement="_zQkdZycSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="620.0" y="834.0"/>
-        <di:waypoint xsi:type="dc:Point" x="685.0" y="834.0"/>
-        <di:waypoint xsi:type="dc:Point" x="750.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="690.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="755.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="820.0" y="834.0"/>
         <bpmndi:BPMNLabel>
           <dc:Bounds height="14.0" width="79.0" x="646.0" y="835.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdSCcSEeabUY4i7li0Eg" bpmnElement="_14CA6DE2-469B-41BC-A280-4A14A940995A" sourceElement="_zQkdaCcSEeabUY4i7li0Eg" targetElement="_zQkdbScSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="600.0" y="854.0"/>
-        <di:waypoint xsi:type="dc:Point" x="600.0" y="939.0"/>
-        <di:waypoint xsi:type="dc:Point" x="930.0" y="939.0"/>
+        <di:waypoint xsi:type="dc:Point" x="670.0" y="854.0"/>
+        <di:waypoint xsi:type="dc:Point" x="670.0" y="939.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1000.0" y="939.0"/>
         <bpmndi:BPMNLabel>
           <dc:Bounds height="14.0" width="41.0" x="703.0" y="940.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdSScSEeabUY4i7li0Eg" bpmnElement="_5F42F816-6AFF-48D3-A193-662473C34928" sourceElement="_zQkdaCcSEeabUY4i7li0Eg" targetElement="_zQkdaScSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="600.0" y="814.0"/>
-        <di:waypoint xsi:type="dc:Point" x="600.0" y="744.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1110.0" y="744.0"/>
+        <di:waypoint xsi:type="dc:Point" x="670.0" y="814.0"/>
+        <di:waypoint xsi:type="dc:Point" x="670.0" y="744.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1180.0" y="744.0"/>
         <bpmndi:BPMNLabel>
           <dc:Bounds height="14.0" width="17.0" x="812.0" y="745.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdTCcSEeabUY4i7li0Eg" bpmnElement="_F6A5FC01-C2FB-4555-81AB-5F6DF636651A" sourceElement="_zQkdaicSEeabUY4i7li0Eg" targetElement="_zQkdaycSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="1030.0" y="834.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1070.0" y="834.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1110.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1100.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1140.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1180.0" y="834.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdTScSEeabUY4i7li0Eg" bpmnElement="_1ED3EF7C-DC66-4D00-BBDB-CA626EABA6D5" sourceElement="_zQkdbScSEeabUY4i7li0Eg" targetElement="_zQkdbCcSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="1030.0" y="939.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1070.0" y="939.0"/>
-        <di:waypoint xsi:type="dc:Point" x="1110.0" y="939.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1100.0" y="939.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1140.0" y="939.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1180.0" y="939.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdVScSEeabUY4i7li0Eg" bpmnElement="_0CC151AE-4AB5-4152-89B6-74AA3D540A20" sourceElement="_zQkdXycSEeabUY4i7li0Eg" targetElement="_zQkdZScSEeabUY4i7li0Eg">
@@ -981,8 +981,8 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
       <bpmndi:BPMNEdge id="_zQkdVicSEeabUY4i7li0Eg" bpmnElement="_927E1694-3C4E-4186-BD86-9027FB160002" sourceElement="_zQkdZScSEeabUY4i7li0Eg" targetElement="_zQkdZicSEeabUY4i7li0Eg">
         <di:waypoint xsi:type="dc:Point" x="1290.0" y="636.0"/>
         <di:waypoint xsi:type="dc:Point" x="1290.0" y="687.0"/>
-        <di:waypoint xsi:type="dc:Point" x="440.0" y="687.0"/>
-        <di:waypoint xsi:type="dc:Point" x="440.0" y="794.0"/>
+        <di:waypoint xsi:type="dc:Point" x="510.0" y="687.0"/>
+        <di:waypoint xsi:type="dc:Point" x="510.0" y="794.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="_zQkdbicSEeabUY4i7li0Eg" bpmnElement="_09537865-962C-467D-B7F1-4DAD5511EB1E" sourceElement="_zQkdYicSEeabUY4i7li0Eg" targetElement="_zQkdWicSEeabUY4i7li0Eg">
@@ -996,9 +996,9 @@ kcontext.setVariable(&quot;userList&quot;, userList);</bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="703.0" y="402.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="_zQkdZycSEeabUY4i7li0Eg" targetElement="_zQkdaicSEeabUY4i7li0Eg">
-        <di:waypoint xsi:type="dc:Point" x="850.0" y="834.0"/>
-        <di:waypoint xsi:type="dc:Point" x="890.0" y="834.0"/>
-        <di:waypoint xsi:type="dc:Point" x="930.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="920.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="960.0" y="834.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1000.0" y="834.0"/>
         <bpmndi:BPMNLabel/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_2" sourceElement="BPMNShape_StartEvent_1" targetElement="_zQkdXCcSEeabUY4i7li0Eg">
