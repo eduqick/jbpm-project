@@ -1,0 +1,14 @@
+
+<form id="612566128">
+<property name="name" value="make-changes-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="evalResult" type="InputText" id="661510084">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;steps (evalResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="steps"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="steps" name="#E9E371" type="basicType" outId="" value="java.lang.String" id="evalResult"/>
+</form>
